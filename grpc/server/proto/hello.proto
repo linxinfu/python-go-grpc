@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service HelloWord {
+    rpc Hello(StringRequest) returns (StringResponse){}
+}
+
+message StringRequest {
+    string param = 1;
+}
+
+message StringResponse {
+    string resp = 1;
+}
